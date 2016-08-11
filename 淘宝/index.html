@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<header>
+		<div class="left">
+			<a href="javaScript:;" class="t1">亲，请登录</a>
+			<a href="javaScritp:;" class="t1">免费注册</a>
+			<a href="javaScript:;" class="t1">手机逛淘宝</a>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="javaScript:;" class="t2">
+						我的淘宝<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						购物车0<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						收藏<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2 t3">
+						商品分类
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2">
+						卖家中心<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2">
+						联系客服<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javaScript:;" class="t2">
+						<i class="fa fa-align-justify" aria-hidden="true"></i>
+						网站导航<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<div class="logoSearch">
+	<div>
+		<h1 class="logo">
+		<a href="//www.taobao.com" target="_blank"><img src="icon/tlg.png" class="logoImg"></a>
+		</h1>
+	</div>
+	<div class="search-bd" id="searchBox">
+        <ul class="tao-tmall-shop" id="tts">
+            <li class="taoselect" id="taobao">宝贝</li>
+            <li id="tmall">天猫</li>
+            <li id="shop">店铺</li>
+        </ul>
+        <div class="taoSearch" id="taoSearch">
+            <input type="text" class="Search-bd-input" id="searchBd" placeholder="    六一儿童玩具">
+            <i class="fa fa-search taoSearch-icon" aria-hidden="true"></i>
+            <a href="javaScript:;" class="taoSearch-camera">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </a>
+            <ul class="searchList" id="searchList">
+
+            </ul>
+        </div>
+
+        <div class="tmallSearch">
+            <input type="text" class="Search-bd-input" id="searchTd" placeholder="    完美音质 近在咫尺">
+            <i class="fa fa-search taoSearch-icon" aria-hidden="true"></i>
+			<a href="javaScript:;" class="taoSearch-camera">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </a>
+            <ul class="searchList" id="searchList">
+
+            </ul>
+        </div>
+        <div class="shopSearch">
+            <input type="text" class="Search-bd-input" id="searchSd" placeholder="    店铺A">
+			<i class="fa fa-search taoSearch-icon" aria-hidden="true"></i>
+        </div>
+        <div class="search">
+            <button type="submit" class="search-click" id="searchClick">搜索</button>
+        </div>
+    </div>
+	<a href="javaScript:;" class="search-tip">高级搜索</a>
+    <div id="qr">
+        <a href="//www.taobao.com/m" class="qr-bd">
+            <span class="h">手机淘宝</span>
+            <img src="icon/8.png" class="h-qr">
+        </a>
+    </div>
+    <div class="search-hot-line">
+        <a href="#" target="_blank" class="search-hot-word">单肩包</a>
+        <a href="#" target="_blank" class="search-hot-word">机械键盘</a>
+        <a href="#" target="_blank" class="search-hot-word">双肩包男</a>
+        <a href="#" target="_blank" class="search-hot-word">女T恤</a>
+        <a href="#" target="_blank" class="search-hot-word">男士胸包</a>
+        <a href="#" target="_blank" class="search-hot-word">黄琍</a>
+        <a href="#" target="_blank" class="search-hot-word">时尚男包</a>
+        <a href="#" target="_blank" class="search-hot-word">女士凉鞋</a>
+        <a href="#" target="_blank" class="search-hot-word">巧克力</a>
+        <a href="#" target="_blank" class="search-hot-word">斜挎包</a>
+        <a href="#" target="_blank" class="search-hot-word">水杯</a>
+        <a href="#" target="_blank" class="search-hot-word">登山包</a>
+        <a href="#" target="_blank" class="search-hot-more">更多 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!--导购栏-->
+<div class='shop-guide'>
+    <div class="service-hd">
+        <a href="#">
+            <h3>主题市场</h3>
+            <i class="fa fa-list" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <ul class="shop-guide-service">
+        <li class="shop-guide-li">
+            <img src="icon/12.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">女装</a>/<a href="#" class="shop-guide-item">男装</a>/<a href="#" class="shop-guide-item">内衣</a>
+			<img src="icon/13.png" class="shop-guide-li-icon-hot">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/15.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">鞋靴</a>/<a href="#" class="shop-guide-item">箱包</a>/<a href="#"class="shop-guide-item">配件</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/16.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">童装玩具</a>/<a href="#" class="shop-guide-item">孕产</a>/<a href="#"class="shop-guide-item">用品</a>
+            <img src="icon/14.png" class="shop-guide-li-icon-hot ">
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+
+        <li class="shop-guide-li">
+            <img src="icon/17.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">家电</a>/<a href="#" class="shop-guide-item">数码</a>/<a href="#" class="shop-guide-item">手机</a>
+			<img src="icon/13.png" class="shop-guide-li-icon-hot">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+
+        <li class="shop-guide-li">
+            <img src="icon/18.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">美妆</a>/<a href="#" class="shop-guide-item">洗护</a>/<a href="#"class="shop-guide-item">保健品</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/19.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">珠宝</a>/<a href="#" class="shop-guide-item">眼镜</a>/<a href="#" class="shop-guide-item">手表</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+			<img src="icon/20.png" class="shop-guide-li-icon">
+			<a href="#"class="shop-guide-item">运动</a>/<a href="#" class="shop-guide-item">户外</a>/<a href="#"class="shop-guide-item">乐器</a>
+			<img src="icon/13.png" class="shop-guide-li-icon-hot">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/21.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">游戏</a>/<a href="#" class="shop-guide-item">动漫</a>/<a href="#" class="shop-guide-item">影视</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/22.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">美食</a>/<a href="#" class="shop-guide-item">生鲜</a>/<a href="#" class="shop-guide-item">零食</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/23.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">鲜花</a>/<a href="#" class="shop-guide-item">宠物</a>/<a href="#" class="shop-guide-item">农资</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/24.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">房产</a>/<a href="#" class="shop-guide-item">装修</a>/<a href="#" class="shop-guide-item">建材</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/25.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">家具</a>/<a href="#" class="shop-guide-item">家饰</a>/<a href="#" class="shop-guide-item">家纺</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+		</li>
+
+        <li class="shop-guide-li">
+            <img src="icon/26.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">汽车</a>/<a href="#" class="shop-guide-item">二手车</a>/<a href="#" class="shop-guide-item">用品</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/27.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">办公</a>/<a href="#" class="shop-guide-item">DIY</a>/<a href="#" class="shop-guide-item">五金电子</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/28.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">百货</a>/<a href="#" class="shop-guide-item">收纳</a>/<a href="#" class="shop-guide-item">家庭保健</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+
+        <li class="shop-guide-li">
+            <img src="icon/29.png" class="shop-guide-li-icon">
+			<a href="#" class="shop-guide-item">学习</a>/<a href="#" class="shop-guide-item">卡卷</a>/<a href="#" class="shop-guide-item">本地服务</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </li>
+    </ul>
+    <div>
+        <a href="http://www.taobao.com/">
+            <img src="icon/TB1CmmOJVXXXXbWXVXXXXXXXXXX-380-80.jpg" class="service-ft-img">
+        </a>
+    </div>
+</div>
+<!--second-navi-->
+<div class="second-navi">
+    <ul>
+        <li class="aaaa"><a href="http://www.tmall.com" class="second-navi-main">天猫</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-main">聚划算</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-main">天猫超市</a></li>
+        <li class="pipe">|</li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">淘抢购</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">电器城</a></li>
+        <li><a href="http://www.taobao.com " class="second-navi-sup">司法拍卖</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">中国制造</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">特色中国</a></li>
+        <li class="pipe">|</li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">阿里旅行</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">智能生活</a></li>
+        <li><a href="http://www.taobao.com" class="second-navi-sup">苏宁易购</a></li>
+    </ul>
+</div>
+
+<!--轮播图-->
+<div class="Imove" id="Imove">
+    <div class="inner-Imove" id="inner-Imove">
+        <div>
+            <img src="icon/TB-520-280.jpg">
+        </div>
+        <div>
+            <img src="icon/30.jpg">
+        </div>
+        <div>
+            <img src="icon/31.jpg">
+        </div>
+        <div>
+            <img src="icon/32.jpg">
+        </div>
+        <div>
+            <img src="icon/33.jpg">
+        </div>
+        <div>
+            <img src="icon/TB-520-280.jpg">
+        </div>
+    </div>
+    <ul class="Imove-tip" id="ImoveTip">
+        <li class="select"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <a href="javaScript:;" class="lBtn" id="lBtn"></a>
+    <a href="javaScript:;" class="rBtn" id="rBtn"></a>
+</div>
+<div class="hd-tanx">
+    <a href="https://www.taobao.com" target="_blank">
+        <img src="icon/34.jpg">
+    </a>
+</div>
+
+<!--天猫轮播图-->
+<div class="tb-tmall-Imove">
+    <div class="tmall-hd" id="tmall-hd">
+        <span>天猫必逛</span>
+        <em>热门品牌,天天上天猫</em>
+        <strong id="strongNum"><i>1</i>/6</strong>
+    </div>
+    <div class="tmall-Img-outer" id="tio">
+        <div class="tmall-Img-inner" id="tii">
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="height: 201px; width: 173px;border-bottom: 1px solid #ebebeb;"><img src="icon/39.jpg"
+                                                                                                  style="height: 201px; width: 173px; display: block;"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/40.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/41.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width:173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb; margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/42.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/43.jpg"></a>
+                </div>
+            </div>
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/57.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/58.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/59.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/60.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/61.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank">
+                        <img src="icon/62.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="height: 201px; width: 173px;border-bottom: 1px solid #ebebeb;"><img src="icon/39.jpg"
+                                                                                                  style="height: 201px; width: 173px; display: block;"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/40.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/41.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width:173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb; margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/42.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/43.jpg"></a>
+                </div>
+            </div>
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="height: 201px; width: 173px;border-bottom: 1px solid #ebebeb;"><img src="icon/39.jpg"
+                                                                                                  style="height: 201px; width: 173px; display: block;"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/40.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/41.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width:173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb; margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/42.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/43.jpg"></a>
+                </div>
+            </div>
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="height: 201px; width: 173px;border-bottom: 1px solid #ebebeb;"><img src="icon/39.jpg"
+                                                                                                  style="height: 201px; width: 173px; display: block;"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/40.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/41.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width:173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb; margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/42.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/43.jpg"></a>
+                </div>
+            </div>
+            <div class="tmall-Img-inner-div">
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="height: 201px; width: 173px;border-bottom: 1px solid #ebebeb;"><img src="icon/39.jpg"
+                                                                                                  style="height: 201px; width: 173px; display: block;"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/40.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/41.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank"
+                       style="width:173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb; margin-left: -1px;border-bottom: 1px solid #ebebeb;"><img
+                            src="icon/42.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://www.taobao.com" target="_blank" style="width: 173px;height: 100px;overflow: hidden;border-left: 1px solid #ebebeb;margin-left: -1px;
+border-bottom: 1px solid #ebebeb;"><img src="icon/43.jpg"></a>
+                </div>
+            </div>
+
+        </div>
+        <ul class="tmall-Imove-tip" id="tit">
+            <li class="selectT"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <a href="javaScript:;" class="lBtn2" id="lBtn2" style="display: none;"></a>
+        <a href="javaScript:;" class="rBtn2" id="rBtn2" style="display: none;"></a>
+    </div>
+</div>
+<!--今日特卖-->
+<div class="special-sale">
+    <h5>今日特卖</h5>
+    <a href="http://www.taobao.com" target="_blank"><img src="icon/44.jpg"></a>
+</div>
+<!--登录-->
+
+<div class="menber">
+    <a href="https://www.taobao.com" class="menber-logo">
+        <img src="icon/36.jpg" class="menber-logo-img">
+    </a>
+    <span class="member-nick-info">Hi!你好</span>
+    <p class="member-tbj">
+        <a href="https://www.taobao.com">
+            <img src="icon/37.png" alt="领淘宝金币" class="s_member">
+            领淘宝金币抵钱
+        </a>
+        <span>或去</span>
+        <a href="https://www.taobao.com">会员俱乐部</a>
+    </p>
+    <div class="member-select">
+        <a href="https://www.taobao.com" class="btn-login">登录</a>
+        <a href="https://www.taobao.com" class="btn-middle">注册</a>
+        <a href="https://www.taobao.com" class="btn-shop">开店</a>
+    </div>
+
+</div>
+<!--公告-->
+<div class="tb-notice" id="tb-notice">
+    <ul class="notice-hd" id="notice-hd">
+        <li class="select"><a href="https://www.taobao.com" target="_blank">公告</a></li>
+        <li><a href="https://www.taobao.com" target="_blank">规则</a></li>
+        <li><a href="https://www.taobao.com" target="_blank">安全</a></li>
+        <li><a href="https://www.taobao.com" target="_blank">论坛</a></li>
+        <li><a href="https://www.taobao.com" target="_blank">公益</a></li>
+    </ul>
+    <div class="notice-bd" style="display: block;">
+        <ul class="notice-bd-style">
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">阿里巴巴集团在东京宣布启动"日本招商中心"</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">国内最大分享经济平台</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">三大运营商天猫"合体"</a></li>
+        </ul>
+    </div>
+    <div class="notice-bd" style="display: none;">
+        <ul class="notice-bd-style">
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">出售假冒商品规则变更</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">商品发布数量限制变更</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">中国质造市场管理规范</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">淘宝网营销规则变更</a></li>
+
+        </ul>
+    </div>
+    <div class="notice-bd" style="display: none;">
+        <ul  class="notice-bd-style">
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">淘宝行业规划发布会</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">创业社区招募管理员</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">原创设计女装乐往</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">是赚钱还是骗子</a></li>
+        </ul>
+
+
+    </div>
+    <div class="notice-bd" style="display: none;">
+        <ul  class="notice-bd-style">
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">骗术揭秘：骗子供应商</a></li>
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">冒充军队人员行骗</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">阿里巴巴联手公安打假</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">4家假鞋厂被连锅端</a></li>
+        </ul>
+    </div>
+    <div class="notice-bd" style="display: none;">
+        <ul class="notice-bd-style">
+            <li><a href="https://www.taobao.com" target="_blank" style="color: #F40">阿里与残联出助残政策</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">一图看懂联合公益计划</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">公益宝贝卖家发票索取</a></li>
+            <li><a href="https://www.taobao.com" target="_blank">公益机构淘宝开店攻略</a></li>
+        </ul>
+    </div>
+</div>
+<!--right 选项卡-->
+<div class="right-tab-c">
+    <ul class="cove-list">
+        <li style="border-left: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/45.jpg">
+                <p>充话费</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/46.jpg">
+                <p>游戏</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/47.jpg">
+                <p>旅行</p>
+            </a>
+        </li>
+        <li style="border-right: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/48.jpg">
+                <p>保险</p>
+            </a>
+        </li>
+        <li style="border-left: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/49.jpg">
+                <p>彩票</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/50.jpg">
+                <p>电影</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/51.jpg">
+                <p>点外卖</p>
+            </a>
+        </li>
+        <li style="border-right: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/52.jpg">
+                <p>理财</p>
+            </a>
+        </li>
+        <li style="border-left: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/53.jpg">
+                <p>找服务</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/54.jpg">
+                <p>音乐</p>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/55.jpg">
+                <p>水电费</p>
+            </a>
+        </li>
+        <li style="border-right: none;">
+            <a href="http://www.taobao.com" target="_blank">
+                <img src="icon/56.jpg">
+                <p>火车票</p>
+            </a>
+        </li>
+    </ul>
+    <div class="cove-box" style="display:none;">
+        <a href="javascript:;" class="cove-box-close"><img src="icon/9.png"></a>
+        <div class="cove-box-item">
+            <div class="box-item-top">
+
+                <a href="http://www.taobao.com" target="_blank" class="box-item-detail0">充话费</a>
+                <a href="http://www.taobao.com" target="_blank" class="box-item-detail1">充流量</a>
+                <a href="http://www.taobao.com" target="_blank" class="box-item-detail2">充固话</a>
+                <a href="http://www.taobao.com" target="_blank" class="box-item-detail3">充宽带</a>
+            </div>
+            <div class="box-item-out">
+                <div class="box-item-inner0">
+                    <input type="text" placeholder="请输入号码">
+                    <img src="icon/234.png">
+                </div>
+                <div class="box-item-inner1"></div>
+                <div class="box-item-inner2"></div>
+                <div class="box-item-inner3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--taobaobelt-->
+<div class="tbm-belt">
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/63.jpg" class="tbm-belt-img-main">
+        <strong style="color:#9a745f;">登山爱好者</strong>
+        <span style="color:#9a745f;">向往高高在上</span>
+        <em>
+            <img src="icon/69.png" class="tbm-belt-img-surb">
+            人气463165
+        </em>
+    </a>
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/64.jpg" class="tbm-belt-img-main">
+        <strong>街头潮人</strong>
+        <span>上街怎能没范儿</span>
+        <em>
+            <img src="icon/69.png" class="tbm-belt-img-surb">
+            人气463165
+        </em>
+    </a>
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/65.jpg" class="tbm-belt-img-main">
+        <strong style="color: #846fc7">旗袍女子</strong>
+        <span style="color: #846fc7">风情万种是你</span>
+        <em>
+            <img src="icon/69.png" class="tbm-belt-img-surb">
+            人气463165
+        </em>
+    </a>
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/66.jpg" class="tbm-belt-img-main">
+        <strong style="color: #81c18f;">美鞋控</strong>
+        <span style="color: #81c18f;">我为鞋狂</span>
+        <em>
+            <img src="icon/69.png" class="tbm-belt-img-surb">
+            人气463165
+        </em>
+    </a>
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/68.jpg" class="tbm-belt-img-main">
+        <strong style="color: #de525e;">书法爱好者</strong>
+        <span style="color: #de525e;">挥毫泼墨牌</span>
+        <em>
+            <img src="icon/69.png" class="tbm-belt-img-surb">
+            人气463165
+        </em>
+    </a>
+</div>
+<!--ali Apps-->
+<div class="ali-apps">
+    <h3>阿里APP
+        <a href="http://www.taobao.com" target="_blank" class="ali-app-more">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h3>
+    <div class="ali-apps-detail">
+        <a href="">
+            <img src="icon/69.jpg">
+        </a>
+        <a href="">
+            <img src="icon/70.jpg">
+        </a>
+        <a href="">
+            <img src="icon/71.jpg">
+        </a>
+        <a href="">
+            <img src="icon/72.jpg">
+        </a>
+        <a href="">
+            <img src="icon/73.jpg">
+        </a>
+        <a href="">
+            <img src="icon/74.jpg">
+        </a>
+        <a href="">
+            <img src="icon/75.jpg">
+        </a>
+        <a href="">
+            <img src="icon/76.jpg">
+        </a>
+        <a href="">
+            <img src="icon/77.jpg">
+        </a>
+        <a href="">
+            <img src="icon/78.jpg">
+        </a>
+    </div>
+</div>
+<!--我经常逛的-->
+<div class="myFavorite" id="tb-favorite" style="background: url('icon/default.gif') center no-repeat">
+    <h2>
+        <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h2>
+    <div id="myFavorite-Big-Tab" style="display: block;">
+        <div class="myFavorite-tab1">
+            <div class="myFavorite-first-sidebar">
+                <a href="http://www.taobao.com" target="_blank" style="height: 100px;display: block">
+                    <img src="icon/80.jpg" style="width: 100px; height: 100px;">
+                </a>
+                <div class="first-sidebar-links">
+                    <strong>热门TOP</strong>
+                    <div>
+                        <a href="http://www.taobao.com">海外直邮</a>
+                        <a href="http://www.taobao.com">身体护理</a>
+                        <a href="http://www.taobao.com">爽肤水</a>
+                        <a href="http://www.taobao.com">眼霜</a>
+                        <a href="http://www.taobao.com">面膜</a>
+                        <a href="http://www.taobao.com">男士护肤</a>
+                        <a href="http://www.taobao.com">BB霜</a>
+                        <a href="http://www.taobao.com">唇膏</a>
+                        <a href="http://www.taobao.com">粉底液</a>
+                        <a href="http://www.taobao.com">隔离</a>
+                        <a href="http://www.taobao.com">美妆教程</a>
+                        <a href="http://www.taobao.com">腮红</a>
+                        <a href="http://www.taobao.com">香水</a>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite-first-image">
+                <s style="border-color:#940ce2" class="fic-top"></s>
+                <s style="border-color:#940ce2" class="fic-right"></s>
+                <s style="border-color:#940ce2" class="fic-bottom"></s>
+                <div class="favorite-first-image-floor1">
+                    <div class="first-floor1-cwrap">
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/81.jpg">
+                            <span class="afa">潮流美妆</span>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/82.jpg">
+                            <span class="afa">换季护肤</span>
+                        </a>
+                    </div>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-middle">
+                        <img src="icon/83.jpg">
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-right">
+                        <img src="icon/84.jpg">
+                    </a>
+                </div>
+                <div class="favorite-first-image-floor2">
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor2-left">
+                        <img src="icon/85.jpg">
+                        <span><em>不惧阳光</em><i>美美出行</i></span>
+                    </a>
+                    <div class="first-floor2-right">
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/86.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>男士护肤</strong>
+                            <em>型男必备</em>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/87.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>创意家居</strong>
+                            <em>干活不累</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myFavorite-tab2">
+            <div class="myFavorite-first-sidebar">
+                <a href="http://www.taobao.com" target="_blank" style="height: 100px;display: block">
+                    <img src="icon/88.jpg" style="width: 100px; height: 100px;">
+                </a>
+                <div class="first-sidebar-links" style="background:#6cc919;">
+                    <strong>热门TOP</strong>
+                    <div>
+                        <a href="http://www.taobao.com">海外直邮</a>
+                        <a href="http://www.taobao.com">身体护理</a>
+                        <a href="http://www.taobao.com">爽肤水</a>
+                        <a href="http://www.taobao.com">眼霜</a>
+                        <a href="http://www.taobao.com">面膜</a>
+                        <a href="http://www.taobao.com">男士护肤</a>
+                        <a href="http://www.taobao.com">BB霜</a>
+                        <a href="http://www.taobao.com">唇膏</a>
+                        <a href="http://www.taobao.com">粉底液</a>
+                        <a href="http://www.taobao.com">隔离</a>
+                        <a href="http://www.taobao.com">美妆教程</a>
+                        <a href="http://www.taobao.com">腮红</a>
+                        <a href="http://www.taobao.com">香水</a>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite-first-image">
+                <s style="border-color:#6cc919" class="fic-top"></s>
+                <s style="border-color:#6cc919" class="fic-right"></s>
+                <s style="border-color:#6cc919" class="fic-bottom"></s>
+                <div class="favorite-first-image-floor1">
+
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-middle">
+                        <img src="icon/89.jpg">
+                    </a>
+                    <div class="first-floor1-cwrap">
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/90.jpg">
+                            <span class="afa">运动套装</span>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/91.jpg">
+                            <span class="afa">户外服饰</span>
+                        </a>
+                    </div>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-right">
+                        <img src="icon/92.jpg">
+
+                    </a>
+                </div>
+                <div class="favorite-first-image-floor2">
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor2-left">
+                        <img src="icon/85.jpg">
+                        <span><em>不惧阳光</em><i>美美出行</i></span>
+                    </a>
+                    <div class="first-floor2-right">
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/86.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>男士护肤</strong>
+                            <em>型男必备</em>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/87.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>创意家居</strong>
+                            <em>干活不累</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="myFavorite-tab1">
+            <div class="myFavorite-first-sidebar">
+                <a href="http://www.taobao.com" target="_blank" style="height: 100px;display: block">
+                    <img src="icon/93.jpg" style="width: 100px; height: 100px;">
+                </a>
+                <div class="first-sidebar-links" style="background: #796ac6;">
+                    <strong>热门TOP</strong>
+                    <div>
+                        <a href="http://www.taobao.com">海外直邮</a>
+                        <a href="http://www.taobao.com">身体护理</a>
+                        <a href="http://www.taobao.com">爽肤水</a>
+                        <a href="http://www.taobao.com">眼霜</a>
+                        <a href="http://www.taobao.com">面膜</a>
+                        <a href="http://www.taobao.com">男士护肤</a>
+                        <a href="http://www.taobao.com">BB霜</a>
+                        <a href="http://www.taobao.com">唇膏</a>
+                        <a href="http://www.taobao.com">粉底液</a>
+                        <a href="http://www.taobao.com">隔离</a>
+                        <a href="http://www.taobao.com">美妆教程</a>
+                        <a href="http://www.taobao.com">腮红</a>
+                        <a href="http://www.taobao.com">香水</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="favorite-first-image">
+                <s style="border-color:#796ac6;" class="fic-top"></s>
+                <s style="border-color:#796ac6;" class="fic-right"></s>
+                <s style="border-color:#796ac6;" class="fic-bottom"></s>
+                <div class="favorite-first-image-floor1">
+                    <div class="first-floor1-cwrap">
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/94.jpg">
+                            <span class="afa">全球精品</span>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/95.jpg">
+                            <span class="afa">萌到没朋友</span>
+                        </a>
+                    </div>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-middle">
+                        <img src="icon/96.jpg">
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-right">
+                        <img src="icon/97.jpg">
+                    </a>
+                </div>
+                <div class="favorite-first-image-floor2">
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor2-left">
+                        <img src="icon/98.jpg">
+                        <span><em>现场</em><i>全球扫货直播</i></span>
+                    </a>
+                    <div class="first-floor2-right">
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/99.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>高端系列</strong>
+                            <em>专业跑鞋</em>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/100.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>可爱萌哒</strong>
+                            <em>小钱包</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myFavorite-tab2">
+            <div class="myFavorite-first-sidebar">
+                <a href="http://www.taobao.com" target="_blank" style="height: 100px;display: block">
+                    <img src="icon/101.jpg" style="width: 100px; height: 100px;">
+                </a>
+                <div class="first-sidebar-links" style="background: #fe6fa6;">
+                    <strong>热门TOP</strong>
+                    <div>
+                        <a href="http://www.taobao.com">海外直邮</a>
+                        <a href="http://www.taobao.com">身体护理</a>
+                        <a href="http://www.taobao.com">爽肤水</a>
+                        <a href="http://www.taobao.com">眼霜</a>
+                        <a href="http://www.taobao.com">面膜</a>
+                        <a href="http://www.taobao.com">男士护肤</a>
+                        <a href="http://www.taobao.com">BB霜</a>
+                        <a href="http://www.taobao.com">唇膏</a>
+                        <a href="http://www.taobao.com">粉底液</a>
+                        <a href="http://www.taobao.com">隔离</a>
+                        <a href="http://www.taobao.com">美妆教程</a>
+                        <a href="http://www.taobao.com">腮红</a>
+                        <a href="http://www.taobao.com">香水</a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="favorite-first-image">
+                <s style="border-color:#fe6fa6;" class="fic-top"></s>
+                <s style="border-color:#fe6fa6;" class="fic-right"></s>
+                <s style="border-color:#fe6fa6;" class="fic-bottom"></s>
+                <div class="favorite-first-image-floor1">
+                    <div class="first-floor1-cwrap">
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/102.jpg">
+                            <span class="afa">春夏新装</span>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                            <img src="icon/103.jpg">
+                            <span class="afa">唯美新鞋</span>
+                        </a>
+                    </div>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-middle">
+                        <img src="icon/104.jpg">
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor1-right">
+                        <img src="icon/105.jpg">
+                    </a>
+                </div>
+                <div class="favorite-first-image-floor2">
+                    <a href="http://www.taobao.com" target="_blank" class="first-floor2-left">
+                        <img src="icon/106.jpg">
+                        <span><em>热门</em><i>西瓜上身美死了</i></span>
+                    </a>
+                    <div class="first-floor2-right">
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/107.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>包包</strong>
+                            <em>能治百病</em>
+                        </a>
+                        <a href="http://www.taobao.com" target="_blank">
+                    <span>
+                        <img src="icon/109.jpg" style="width: 60px; height: 60px;">
+                    </span>
+                            <strong>洗发护发</strong>
+                            <em>从头美起</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--右侧底部发现-->
+<div class="tb-discover">
+    <!--淘宝头条-->
+    <div class="tb-discover-headline">
+        <div class="discover-headline-more">
+            <h3>
+                <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </h3>
+            <div class="headline-cover">
+                <a href="http://www.taobao.com">
+                    <img src="icon/111.jpg">
+                    <em>100个女仆都在推荐的这口锅到底有多厉害</em>
+                    <p>flavor stone 锅具霓虹国的人民好像天生有一种“奇葩”的属性，普通的广告到了他们手中，整个气质和画风瞬间就变了，比如说他们把麦当劳的招聘广告做成</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--有好货-->
+    <div class="tb-discover-goods">
+        <div class="goods">
+            <h3></h3>
+            <div class="goodsList">
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/113.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">独上织造 深V领彩线随性宽松的针织开衫</strong>
+                    <p>中长开衫，以平针织起轻盈的料子，温暖又随意。每一个细节务求合体，共同朝向一件衣服的完成。它不会过时，也不会流行。</p>
+                    <em>64 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/114.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">婴儿沐浴温度计</strong>
+                    <p>可以放入水中的测量计，可以快捷准确的测量水温，简单易看的温度标志，让宝妈们随时可以掌控。而且可爱的造型，也可以让宝宝洗澡的时候乐趣无穷。</p>
+                    <em>153 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/115.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">立体按压式蔬菜切条器</strong>
+                    <p>可以用来切黄瓜，胡萝卜，红薯，土豆等蔬菜，简便易操作，清洗方便，切出的条也比较均匀。</p>
+                    <em>581 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/122.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">清新印花T恤</strong>
+                    <p>清新设计的中长款T恤在本季为都市人带来完美视觉享受，宽大的版型更有夏日的味道，很好的体现了穿着舒适性。</p>
+                    <em>1032 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/116.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">美式仿真花装饰</strong>
+                    <p>花蕊圆润而饱满，色泽鲜亮，渐变过度极为自然，细腻的叶脉纹路，呈现出精心制作的工艺，带来颇具装饰韵味的仿真外观。</p>
+                    <em>229 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/117.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">桑蚕丝印花连衣裙</strong>
+                    <p>采用真丝印花面料，手感细腻，柔软亲肤，裙身布满多彩的花卉图案，在黄色的衬托下更显活力，裙摆的多层设计增添立体感和层次，适合配搭高跟鞋塑造飘逸的都市造型。</p>
+                    <em>355 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/118.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">波点七分裤</strong>
+                    <p>隐形插袋，极具装饰意义，同时又方便置物，采用卷边的裤腿设计，简约时尚，率性自然，采用舒适有型且拥有柔滑手感的面料，穿着更舒适。</p>
+                    <em>157 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/119.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">V领背带裙</strong>
+                    <p>纹理感十足的一款绿色背带裙，别具一格的色彩印染展现出非凡的格调感，背带的元素正是减龄的利器所在，大V门禁的处理，加上双层的饰边，尽显潮流格调哦！</p>
+                    <em>373 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/120.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">法国 魅可 修饰肤色 保湿 轻亮粉底液</strong>
+                    <p>
+                        非常可爱的奶瓶包装，一看就超有特色。质地水润轻薄，即便是冬天，抹在脸上也不会有卡粉的情况，保湿性、持久力都不错，即便脸上出油也不会很脱妆，有需要可以多涂几层。轻薄型粉底液，所以难免会有些沉淀，使用前记得摇一摇啦！</p>
+                    <em>152 人说好</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank">
+                    <span><img src="icon/121.jpg" style="width: 100px; height: 100px;"></span>
+                    <strong class="goodsList-text">安溪铁观音茶叶</strong>
+                    <p>安溪铁观音清香型茶叶，外形色泽翠绿润，颗粒匀整洁净，开汤高香持久，滋味鲜醇高爽，汤色金黄清澈明亮，叶底肥厚，软亮匀整，有余香。</p>
+                    <em>76 人说好</em>
+                </a>
+            </div>
+            <a href="javascript:;" class="goods-refresh">
+                <img src="icon/123.png">
+                <span>换一组看看</span>
+            </a>
+        </div>
+    </div>
+    <!--每日好店-->
+    <div class="discover-shop">
+        <a href="http://www.taobao.com">
+            <h3></h3>
+        </a>
+        <ul class="shop-list">
+            <li>
+                <a href="http://www.taobao.com" target="_blank">
+                    <strong>今日推荐—1天3波</strong>
+                </a>
+                <p>好评率99.04%，神店！</p>
+                <div class="shop-img">
+                    <a href="http://www.taobao.com" style="width: 180px;height: 180px;"><img src="icon/125.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/126.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/127.jpg"></a>
+
+                </div>
+            </li>
+            <li>
+                <a href="http://www.taobao.com" target="_blank">
+                    <strong>吃吃吃</strong>
+                </a>
+                <p>好评率99.67%，神店！</p>
+                <div class="shop-img">
+                    <a href="http://www.taobao.com" style="width: 180px;height: 180px;"><img src="icon/128.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/129.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/130.jpg"></a>
+
+                </div>
+            </li>
+            <li>
+                <a href="http://www.taobao.com" target="_blank">
+                    <strong>包包控</strong>
+                </a>
+                <p>好评率99.21%，神店！</p>
+                <div class="shop-img">
+                    <a href="http://www.taobao.com" style="width: 180px;height: 180px;"><img src="icon/131.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/132.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/133.jpg"></a>
+
+                </div>
+            </li>
+            <li>
+                <a href="http://www.taobao.com" target="_blank">
+                    <strong>生活家—爱的杂货铺</strong>
+                </a>
+                <p>好评率100%，神店！</p>
+                <div class="shop-img">
+                    <a href="http://www.taobao.com" style="width: 180px;height: 180px;"><img src="icon/134.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/136.jpg"></a>
+                    <a href="http://www.taobao.com"><img src="icon/135.jpg"></a>
+
+                </div>
+            </li>
+        </ul>
+        <a href="http://www.taobao.com" class="goods-refresh">
+            <img src="icon/137.png">
+            <span>查看更多好店</span>
+        </a>
+    </div>
+    <!--今日热卖-->
+    <div class="hot-item">
+        <h4>今日热卖</h4>
+        <a href="http://www.taobao.com">
+            <img src="icon/138.jpg">
+        </a>
+    </div>
+</div>
+
+<div class="poster">
+    <img src="icon/139.jpg">
+</div>
+
+<!--时尚爆料-->
+<div class="fashion" id="fashionFloor">
+    <h2>
+        <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h2>
+    <div class="fashion-list" id="fashionList" style="height: 268px;clear: both; display: block;">
+        <div class="fashion-title">
+            <h3 style="border-bottom-color: #ff0055">
+                <a href="http://www.taobao.com" class="code-show">
+                    <img src="icon/150.jpg" style="width: 82.5px;height: 18px;">
+                    <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                </a>
+            </h3>
+            <div class="fashion-image">
+                <a href="http://www.taobao.com" class="fashion-image-list1">
+                    <img src="icon/147.jpg">
+                        <span style="background-color:#940ce2;">
+                           不惧阳光
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list2">
+                    <img src="icon/148.jpg">
+                    <span class="fashion-data">那人也要面子</span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list3">
+                    <img src="icon/149.jpg">
+                    <span class="fashion-data">美发良品</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="fashion-title">
+            <h3 style="border-bottom-color: #ff0055">
+                <a href="http://www.taobao.com" class="code-show">
+                    <img src="icon/151.jpg" style="width: 82.5px;height: 18px;">
+                    <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                </a>
+
+            </h3>
+            <div class="fashion-image">
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/152.jpg">
+                     <span class="fashion-data">
+                            解放你的脚
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/153.png">
+                     <span class="fashion-data">
+                            Mini单肩斜跨
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/154.jpg">
+                     <span class="fashion-data">
+                            出街必备
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/155.png">
+                     <span class="fashion-data">
+                            Calvin Klein
+                        </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="fashion-title">
+            <h3 style="border-bottom-color: #ff0055">
+                <a href="http://www.taobao.com" class="code-show">
+                    <img src="icon/141.jpg" style="width: 82.5px;height: 18px;">
+                    <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                </a>
+            </h3>
+            <div class="fashion-image">
+                <a href="http://www.taobao.com" class="fashion-image-list1">
+                    <img src="icon/144.jpg">
+                        <span style="background-color:#ff0055;">
+                            春夏搭配技巧<br>百变潮看我
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list2">
+                    <img src="icon/145.jpg">
+                    <span class="fashion-data">可爱公主</span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list3">
+                    <img src="icon/146.jpg">
+                    <span class="fashion-data">学院清新</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="fashion-title">
+            <h3 style="border-bottom-color: #ff0055">
+                <a href="http://www.taobao.com" class="code-show">
+                    <img src="icon/156.jpg" style="width: 82.5px;height: 18px;">
+                    <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                </a>
+
+            </h3>
+            <div class="fashion-image">
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/157.jpg">
+                     <span class="fashion-data">
+                         本周红人新单
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/158.jpg">
+                     <span class="fashion-data">
+                            交叉绑带凉鞋
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/159.jpg">
+                     <span class="fashion-data">
+                            娃娃裙穿上身
+                        </span>
+                </a>
+                <a href="http://www.taobao.com" class="fashion-image-list4">
+                    <img src="icon/160.jpg">
+                     <span class="fashion-data">
+                           90平这样装
+                        </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--品质生活家-->
+<div class="life" id="life">
+    <h2>
+        <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h2>
+    <div class="life-list" id="lifeList" style="display: block; opacity: 10;">
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/162.png" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/163.jpg">
+                        <strong>大果樱桃</strong>
+                        <em>一口一个爆浆</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/164.jpg">
+                        <strong>新鲜凤梨</strong>
+                        <em>吃的就是这个味</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">三亚水果</a>
+                        <a href="">广西芒果</a>
+                        <a href="">全球美食</a>
+                        <a href="">烘培原料</a>
+                        <a href="">台湾水果</a>
+                        <a href="">生猛海鲜</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/165.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/166.jpg">
+                            <span>10万89平婚房</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/167.jpg">
+                            <span>点亮一个世界</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/168.jpg">
+                            <span>大牌设计范</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/169.jpg">
+                            <span>个性小窝</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/170.jpg" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/171.jpg">
+                        <strong>潮牌 手表</strong>
+                        <em>rumbatime</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/172.jpg">
+                        <strong>热门女鞋</strong>
+                        <em>开口笑</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">春天的包包</a>
+                        <a href="">Chloe墨镜</a>
+                        <a href="">小白鞋</a>
+                        <a href="">水润你</a>
+                        <a href="">亚历山大.王</a>
+                        <a href="">Gucci酒神</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/173.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/174.jpg">
+                            <span>真皮中国风</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/175.jpg">
+                            <span>纯棉婴儿爬服</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/176.jpg">
+                            <span>顶尖品质箱子</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/177.jpg">
+                            <span>棉麻素色床品</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/178.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/179.jpg">
+                            <span>时尚童装</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/180.jpg">
+                            <span>玩具百宝箱</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/181.jpg">
+                            <span>童鞋荟萃</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/182.jpg">
+                            <span>母婴海淘</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/183.jpg" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/184.jpg">
+                        <strong>品牌好房</strong>
+                        <em>大品牌好房子</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/185.jpg">
+                        <strong>优惠好房</strong>
+                        <em>买房享优惠</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">特价房</a>
+                        <a href="">二手好房</a>
+                        <a href="">海外房产</a>
+                        <a href="">好房捡漏</a>
+                        <a href="">拎包入住</a>
+                        <a href="">旅游地产</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/186.jpg" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/187.jpg">
+                        <strong>儿童节好礼</strong>
+                        <em>大牌满赠</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/188.jpg">
+                        <strong>新品电子狗</strong>
+                        <em>抢购送好礼</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">二手车捡漏</a>
+                        <a href="">特价好车</a>
+                        <a href="">0利率购车</a>
+                        <a href="">车品特卖会</a>
+                        <a href="">爱车保养</a>
+                        <a href="">加油卡充值</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/189.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/190.jpg">
+                            <span>运动好店虎扑荐</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/191.jpg">
+                            <span>练马甲线瘦A4腰</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/192.jpg">
+                            <span>健身装备不能少</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/193.jpg">
+                            <span>户外出行揽美景</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--特色玩微控-->
+<div class="play-special" id="play-special" >
+    <h2>
+        <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h2>
+    <div id="play-special-list" class="play-special-list">
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/195.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/196.jpg">
+                            <span>hover camera</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/197.jpg">
+                            <span>手机贴上墙</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/198.jpg">
+                            <span>全能健康手环</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/199.jpg">
+                            <span>夏天不热</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/200.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/201.jpg">
+                            <span>宅男懂的</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/202.jpg">
+                            <span>把妹神器</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/198.jpg">
+                            <span>全能健康手环</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/199.jpg">
+                            <span>夏天不热</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/162.png" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/163.jpg">
+                        <strong>大果樱桃</strong>
+                        <em>一口一个爆浆</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/164.jpg">
+                        <strong>新鲜凤梨</strong>
+                        <em>吃的就是这个味</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">三亚水果</a>
+                        <a href="">广西芒果</a>
+                        <a href="">全球美食</a>
+                        <a href="">烘培原料</a>
+                        <a href="">台湾水果</a>
+                        <a href="">生猛海鲜</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/162.png" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/163.jpg">
+                        <strong>大果樱桃</strong>
+                        <em>一口一个爆浆</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/164.jpg">
+                        <strong>新鲜凤梨</strong>
+                        <em>吃的就是这个味</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">三亚水果</a>
+                        <a href="">广西芒果</a>
+                        <a href="">全球美食</a>
+                        <a href="">烘培原料</a>
+                        <a href="">台湾水果</a>
+                        <a href="">生猛海鲜</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/162.png" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/163.jpg">
+                        <strong>大果樱桃</strong>
+                        <em>一口一个爆浆</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/164.jpg">
+                        <strong>新鲜凤梨</strong>
+                        <em>吃的就是这个味</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">三亚水果</a>
+                        <a href="">广西芒果</a>
+                        <a href="">全球美食</a>
+                        <a href="">烘培原料</a>
+                        <a href="">台湾水果</a>
+                        <a href="">生猛海鲜</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/165.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/166.jpg">
+                            <span>10万89平婚房</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/167.jpg">
+                            <span>点亮一个世界</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/168.jpg">
+                            <span>大牌设计范</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/169.jpg">
+                            <span>个性小窝</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/165.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/166.jpg">
+                            <span>10万89平婚房</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/167.jpg">
+                            <span>点亮一个世界</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/168.jpg">
+                            <span>大牌设计范</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/169.jpg">
+                            <span>个性小窝</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="life-list-box">
+                <div class="fashion-title">
+                    <h3 style="border-bottom-color: #ff0055">
+                        <a href="http://www.taobao.com" class="code-show">
+                            <img src="icon/165.jpg" style="width: 82.5px;height: 18px;">
+                            <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                        </a>
+                    </h3>
+                    <div class="life-image-2">
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/166.jpg">
+                            <span>10万89平婚房</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/167.jpg">
+                            <span>点亮一个世界</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/168.jpg">
+                            <span>大牌设计范</span>
+                        </a>
+                        <a href="http://www.taobao.com" class="life-image-style2">
+                            <img src="icon/169.jpg">
+                            <span>个性小窝</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="life-list-box">
+            <div class="fashion-title">
+                <h3 style="border-bottom-color: #ff0055">
+                    <a href="http://www.taobao.com" class="code-show">
+                        <img src="icon/162.png" style="width: 82.5px;height: 18px;">
+                        <img src="icon/142.png" class="code">
+                        <span class="code-detail">
+                            <img src="icon/143.jpg">
+                            <em>手机淘宝扫码</em>
+                        </span>
+                    </a>
+                </h3>
+                <div class="life-image">
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/163.jpg">
+                        <strong>大果樱桃</strong>
+                        <em>一口一个爆浆</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/164.jpg">
+                        <strong>新鲜凤梨</strong>
+                        <em>吃的就是这个味</em>
+                    </a>
+                    <div class="life-text-list">
+                        <a href="">三亚水果</a>
+                        <a href="">广西芒果</a>
+                        <a href="">全球美食</a>
+                        <a href="">烘培原料</a>
+                        <a href="">台湾水果</a>
+                        <a href="">生猛海鲜</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--实惠专业户-->
+<div class="substantial" id="substantial" }>
+    <h2>
+        <a href="http://www.taobao.com" target="_blank">更多<i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </h2>
+    <div id="getSubBox" class="getSubBox">
+        <div class="substantial-box">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/204.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+                <div class="start-time">抢购进行中</div>
+            </div>
+            <div class="substantial-img">
+                <a href="http://www.taobao.com" target="_blank">
+                    <img src="icon/206.jpg">
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-name-link">
+                    <h4>卖超爆！夏季超薄款丝袜连裤袜</h4>
+                    <span>￥4</span>
+                    <span class="sold-count">已抢购16195件</span>
+                </a>
+            </div>
+        </div>
+        <div class="substantial-box-style1">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/207.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/208.jpg">
+                    <span>优质好货</span>
+                    <em>特价专区</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">十元包邮</a>
+            </div>
+        </div>
+        <div class="substantial-box-style1">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/209.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/210.jpg">
+                    <span>奢品底价购</span>
+                    <em>网红最爱</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">剁手</a>
+            </div>
+        </div>
+        <div class="substantial-box-style1" style="width: 182px; margin-right: 0;">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/211.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/212.jpg">
+                    <span>品牌尾货</span>
+                    <em>断色断码抢</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">365天底价</a>
+            </div>
+        </div>
+        <div class="substantial-box">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/213.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+                <div class="start-time">抢购进行中</div>
+                <div class="substantial-img">
+                    <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                        <img src="icon/210.jpg">
+                        <span>数码好物</span>
+                        <em>月光宝盒</em>
+                    </a>
+                    <a href="http://www.taobao.com" target="_blank" class="substantial-btn">淘金币专享</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="substantial-box-style1">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/215.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/216.jpg">
+                    <span>0点上新</span>
+                    <em>特价包邮</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">限量必抢</a>
+            </div>
+        </div>
+        <div class="substantial-box-style1">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/217.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/219.jpg">
+                    <span>0.01元疯抢</span>
+                    <em>超值付邮领</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">先用后买</a>
+            </div>
+        </div>
+        <div class="substantial-box-style1" style="width: 182px; margin-right: 0;">
+            <div class="substantial-box-title">
+                <h3>
+                    <a href="http://www.taobao.com" target="_blank">
+                        <img src="icon/220.jpg">
+                    </a>
+                <span class="substantial-code">
+                    <img src="icon/142.png" style="width: 22px; height: 22px;">
+                    <span>
+                        <img src="icon/205.jpg" style="width: 66px; height: 66px;">
+                        <em>手机淘宝扫码</em>
+                    </span>
+                </span>
+                </h3>
+
+            </div>
+            <div class="substantial-img" style="width: 183px;height: 117px;">
+                <a href="http://www.taobao.com" target="_blank" class="substantial-detail">
+                    <img src="icon/221.jpg">
+                    <span>时尚穿搭</span>
+                    <em>全场包邮</em>
+                </a>
+                <a href="http://www.taobao.com" target="_blank" class="substantial-btn">品牌特卖</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tbh-ald-->
+<div class="tbh-ald" >
+    <a href="http://www.taobao.com" target="_blank">
+        <img src="icon/222.png">
+    </a>
+</div>
+
+<!--热卖单品-->
+<div class="hot-thing" id="hot-thing" >
+	<h2>--热卖单品--</h2>
+	<nav>
+		<ul>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">床上桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">床上桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">床上桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">连衣裙</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">桌子</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">床上桌子</a></li>
+		</ul>
+	</nav>
+	<div class="hotbox" id="hotbox">
+		<div class="hotbox-top1">
+			<div class="hotbox1">
+                <img src="icon/hot1.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>189.00</span>
+                <span>月销780笔</span>
+                <span>分离式电池盒;适用于客厅厨房餐厅办公室</span>
+                <span>评级444 收藏1560</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover1">
+					<div class="top">
+						<span>分离式电池盒 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox2">
+                <img src="icon/hot2.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>129.00</span>
+                <span>月销277笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>小熊茶壶 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox3">
+                <img src="icon/hot3.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>2.60</span>
+                <span>月销1277笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>墙纸 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="hotbox-top1">
+			<div class="hotbox1">
+                <img src="icon/hot4.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>19.80</span>
+                <span>月销456笔</span>
+                <span>好的薏米，质硬有光泽，颗粒饱满均匀，呈白色或黄白色、坚实，多为粉性、味甘淡或微甜则为上</span>
+                <span>评级0 收藏1560</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover1">
+					<div class="top">
+						<span>好的薏米 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox2">
+                <img src="icon/hot5.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>139.00</span>
+                <span>月销12笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>连衣裙 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox3">
+                <img src="icon/hot6.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>9.60</span>
+                <span>月销456笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>冰糖 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="hotbox-top1">
+			<div class="hotbox1">
+                <img src="icon/hot7.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>1899.00</span>
+                <span>月销380笔</span>
+                <span>内置式电源插头安全防水；容量刚好符合单身人群或</span>
+                <span>评级444 收藏1560</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover1">
+					<div class="top">
+						<span>内置式电源插头 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox2">
+                <img src="icon/hot8.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>129.00</span>
+                <span>月销277笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>书架 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+			<div class="hotbox3">
+                <img src="icon/hot9.jpg">
+                <span><i class="fa fa-jpy" aria-hidden="true"></i>2.60</span>
+                <span>月销1277笔</span>
+				<a href="hettp://www.taobao.com" target="_blank" class="cover2">
+					<div class="top">
+						<span>书桌 超值期待</span>
+						<span>去看看</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="hotbottom">
+			<div class="picbottom">  
+				<img src="icon/hot10.jpg">
+				<div class="cover3"></div>
+			</div>
+			<div class="picbottom">  
+				<img src="icon/hot11.jpg">
+				<div class="cover3"></div>
+			</div>
+			<div class="picbottom">  
+				<img src="icon/hot12.jpg">
+				<div class="cover3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="like-thing" id="like-thing" >
+	<h2>--<i class="fa fa-heart-o" aria-hidden="true"></i>猜你喜欢--</h2>
+	<h4>实时推荐最适合你的宝贝</h4>
+	<div class="likemain">
+	
+		<div class="likebox">
+			<img src="icon/like1.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like2.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like1.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>		
+		<div class="likebox">
+			<img src="icon/like2.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like1.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>		
+		<div class="likebox">
+			<img src="icon/like2.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like1.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like2.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like1.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="likebox">
+			<img src="icon/like2.jpg">
+			<p>伊顿珍妮2016夏季英伦学院风修身中长款短袖格子娃娃领衬衫连衣裙</p>
+			<em><i class="fa fa-jpy" aria-hidden="true"></i>87.0</em>
+			<span> 销量：123</span>
+			<a href="hettp://www.taobao.com" target="_blank" class="cover">
+				<div class="bottom">
+					<span>找相似</span>
+					<span>发现更多相似的宝贝<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<h2>--END--</h2>
+</div>
+
+<footer>
+	<nav>
+		<ul>
+			<li><a href="http://www.taobao.com" target="_blank">阿里巴巴集团</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">淘宝网</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">天猫</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">聚划算</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">全球速卖通</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里巴巴国际交易市场</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">1688</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里妈妈</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里旅行 · 去啊</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里云计算</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">YunOS</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里通信</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">一淘</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">万网</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">高德</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">友盟</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">虾米</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里星球</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">来往</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">钉钉</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">支付宝</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">优酷</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里健康</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里影业</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">阿里体育</a></li>
+			<li><a href="http://www.taobao.com" target="_blank">网商银行</a></li>
+		</ul>
+	</nav>
+</footer>
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/tbjs.js"></script>
+<html>
