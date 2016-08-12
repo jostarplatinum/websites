@@ -53,6 +53,97 @@ header .logo a{
 	text-indent: -9999px;
 }
 
+/*login登录状态开始*/
+header .login{
+	float: right;
+	padding-top:20px;
+}
+header .login .order{
+	display:inline-block;
+	font-size: 14px;
+	color:#fff;
+	opacity:0.5;
+	transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+header .login .order:hover{
+	opacity:0.9;
+}
+header .login .order .order-view-icon{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background:url(../images/order-view.png);
+}
+header .login .order .jiankong{
+	display: inline-block;
+	margin-top: 3px;
+}
+header .login .username{
+	display: block;
+	float: right;
+	height: 40px;
+	position:relative;
+	font-size: 14px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+header .login .username>a{
+	padding:0 20px;
+}
+header .login .username .triangle_icon{
+	display: inline-block;
+	position:absolute;
+	width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    right:5px;
+    top:6px;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+header .login .username .iconRotate{
+
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+header .login .username .userMenu{
+	display: none;
+	position:absolute;
+	top:37px;
+	left:10px;
+	width:106px;
+	border:1px solid #f0f1f2;
+	border-top: none;
+	z-index: 2;
+}
+header .login .username .userMenu li{
+	line-height: 30px;
+	background: #fff;
+}
+header .login .username .userMenu li:hover{
+	background:#ddd;
+}
+header .login .username .userMenu li a{
+	width: 91px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    padding-left: 15px;
+}
+/*login登录状态结束*/
+
 /*login未登录状态开始*/
 header .top-right{
 	float: right;
