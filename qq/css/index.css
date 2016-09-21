@@ -1,0 +1,819 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    font-family: Helvetica, Tahoma, Arial, 'Hiragino Sans GB', 'Hiragino Sans GB W3', 'Microsoft YaHei', STXihei, STHeiti, Heiti, SimSun, sans-serif;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    color: #333;
+}
+
+body{
+    background: #fff;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+
+    color: #333;
+}
+
+a:hover{
+    color: #12b7f5;
+}
+
+img{
+    border: none;
+}
+
+em{
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+}
+.clearfloat:after{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
+
+    content: '.';
+}
+
+.clearfloat{
+    zoom: 1;
+}
+/* top */
+		.topbar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 150px; /*background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/lineartop.png) repeat-x center top;*/
+            z-index: 900;
+        }
+        .toppic {
+            max-width: 1170px;
+            min-width: 980px;
+            width: 80%;
+            height: 75px;
+            margin: 0 auto;
+        }
+        .toppic a:link, .toppic a:visited {
+            color: #fff;
+        }
+        .topside {
+            float: left;
+            width: 59%;
+        }
+        .logoLink {
+            float: left;
+            display: block;
+            width: 106px;
+            height: 0px;
+            overflow: hidden;
+            padding-top: 76px;
+            font-size: 0;
+            background: transparent url(../images/imlogo.png) no-repeat left 15px;
+        }
+        .topNav {
+            float: left;
+            width: 450px;
+            padding-left: 18px;
+        }
+        .topNav li {
+            float: left;
+            margin-left: 20px;
+        }
+        .topNav li a {
+            float: left;
+            padding: 0 20px;
+            line-height: 75px;
+            font-size: 1.125em;
+        }
+        .topNav li a:hover {
+            background: #12b7f5;
+        }
+
+        .topNav li.current a {
+            background: #12b7f5;
+        }
+        .topTool {
+            float: right;
+            width: 320px;
+            font-size: 0.875em;
+        }
+        .topTool a.barzc {
+            float: left;
+            width: 96px;
+            height: 0;
+            overflow: hidden;
+            padding: 39px 0 0 0;
+            margin: 18px 0 0 0;
+            background: transparent url(../images/icons.png) no-repeat 0 -244px;
+            text-align: center;
+            line-height: 39px;
+            color: #fff;
+        }
+        .topTool a.barzc:hover, .topicfixed a.barzc:hover {
+            background: transparent url(../images/icons.png) no-repeat 0 -284px;
+            color: #fff;
+        }
+        .topTool ul {
+            float: right;
+            height: 40px;
+            padding-top: 6px;
+        }
+        .topTool li {
+            float: right;
+            margin-left: 30px;
+            position: relative;
+            line-height: 40px;
+        }
+        .topTool .login {
+            height: 43px;
+            line-height: 43px;
+        }
+        .topTool .login span {
+            padding: 0 18px;
+            color: #cecece;
+        }
+        .topTool a:hover {
+            color: #12b7f5;
+        }
+        .flashData {
+            float: right;
+            line-height: 17px;
+            text-align: right;
+            letter-spacing: 0.04em;
+        }
+
+        .flashData a:hover {
+            text-decoration: underline;
+        }
+        .loginPenel {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 30px;
+            width: 120px;
+            height: 85px;
+            z-index: 100;
+        }
+        .loginPenel .trg {
+            position: absolute;
+            right: 8px;
+            top: 4px;
+            width: 10px;
+            height: 7px;
+            background: transparent url(../images/trg.png) no-repeat 0 0;
+            font-size: 0;
+        }
+        .logindrop {
+            width: 120px;
+            height: 75px;
+            margin-top: 10px;
+            background: #fff;
+        }
+        .nick {
+            width: 100px;
+            height: 39px;
+            overflow: hidden;
+            margin: 0 auto;
+            white-space: nowrap;
+            line-height: 39px;
+            text-align: center;
+            text-overflow: ellipsis;
+        }
+
+        .lgout {
+            width: 100%;
+            border-top: 1px solid #d7d7d7;
+            line-height: 35px;
+            text-align: center;
+        }
+        .lgout a:link, .lgout a:visited {
+            color: #333;
+        }
+        .topicfixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .topicfixed a:link, .topicfixed a:visited {
+            color: #333;
+        }
+
+
+        .topicfixed {
+            height: 75px;
+        }
+
+        .topicfixed .logoLink {
+            background-image: url(https://sqimg.qq.com/qq_product_operations/im/qqlogo/imlogo_b.png);
+        }
+
+        .topicfixed li.current a {
+            background: none;
+            color: #12b7f5;
+        }
+
+        .topicfixed .topNav li a:hover {
+            background: none;
+            color: #12b7f5;
+        }
+
+        .topicfixed a.barzc {
+            display: inline;
+        }
+        /* banner */
+        .crossbanenr {
+            width: 100%;
+            height: 778px;
+        }
+        .crossbanenr ul {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /*max-width: 1920px; */
+            min-width: 1007px;
+            margin: 0 auto;
+        }
+
+        .crossbanenr li {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 1920px;
+            height: 100%;
+            margin: 0 0 0 -960px;
+            display: none;
+            z-index: 1;
+        }
+        .crossbanenr li:first-child {
+            display: block;
+        }
+
+        .crossbanenr li.pcqqbg {
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2016/pc/pc_86_b.jpg) no-repeat center center;
+        }
+
+        .crossbanenr li.mbqqbg {
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2016/pc/ay/mb655_b.jpg) no-repeat center center;
+        }
+        .bncont {
+            position: relative;
+            width: 1050px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .mbqqbg>.bncont{
+            width: 1173px;
+        }
+		.bntxt {
+            position: absolute;
+            top: 50%;
+            width: 473px;
+            height: 390px;
+            margin-top: -195px;
+            z-index: 10;
+        }
+        .bntxt h2 {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-top: 329px;
+            text-indent: -9999px;
+        }
+        .bntxt a {
+            display: block;
+            width: 386px;
+            height: 0;
+            overflow: hidden;
+            padding-top: 76px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/btn541b.png) no-repeat 0 0;
+            text-align: center;
+            line-height: 76;
+            font-size: 30px;
+            letter-spacing: 15px;
+        }
+        .bntxt a.mbxz{
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2016/pc/ay/655_btn.png) no-repeat 0 0;
+            padding-top: 95px;
+        }
+        .bntxt a:link, .bntxt a:visited {
+            color: #fff;
+        }
+        .bntxt a.bnxz {
+            background-position: 0 0;
+        }
+
+        .bntxt a.bnxz:hover {
+            background-position: 0 -77px;
+        }
+        .circle {
+            position: relative;
+            width: 100%;
+            height: 52px;
+            margin-top: -52px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/linearbot.png) repeat-x left top;
+            text-align: center;
+            z-index: 5;
+        }
+        .circle span {
+            margin: 0 5px;
+            padding: 2px 5px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/nav.png) no-repeat center center;
+            cursor: pointer;
+        }
+        .circle span.on {
+            background-image: url(https://sqimg.qq.com/qq_product_operations/im/2015/navcur.png);
+        }
+
+		.content {
+            width: 100%;
+        }
+
+        .content h1 {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-top: 280px;
+            background: #fff url(https://sqimg.qq.com/qq_product_operations/im/2015/brand.png) no-repeat center top;
+        }
+        .activebg {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            background: #fff;
+            background-attachment: fixed;
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+
+        .fisrtbg {
+            background-image: url(https://sqimg.qq.com/qq_product_operations/im/2015/fisrtbg.jpg);
+        }
+
+        .secondbg {
+            background-image: url(https://sqimg.qq.com/qq_product_operations/im/2015/update/avd.jpg);
+        }
+
+        .thirdbg {
+            background-image: url(https://sqimg.qq.com/qq_product_operations/im/2015/blog.jpg);
+        }
+        .txtwrap p {
+            font-size: 18px;
+            letter-spacing: 0.12em;
+        }
+        .qfigure {
+            width: 100%;
+            height: 584px;
+            background: #fff;
+        }
+        .qw960 {
+            position: relative;
+            width: 960px;
+            height: 584px;
+            margin: 0 auto;
+        }
+        .qcallAnimate {
+            position: absolute;
+            left: -32px;
+            bottom: 0;
+            width: 664px;
+            height: 763px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/update/pic1.png) no-repeat 0 0;
+        }
+        .qcall .txtwrap {
+            position: absolute;
+            right: 7px;
+            top: 115px;
+            width: 487px;
+        }
+        .qcall h2 {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-top: 135px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qcall_txt.png) no-repeat 0 0;
+        }
+        .qcall p {
+            width: 100%;
+            margin-bottom: 12px;
+            line-height: 25px;
+            text-align: right;
+            opacity: 0.6;
+        }
+        .figs {
+            width: 100%;
+            padding-top: 44px;
+            min-height: 77px;
+        }
+        .figs li {
+            padding: 58px 0 0;
+            color: #a0a0a0;
+            font-size: 14px;
+            text-align: center;
+        }
+        .qcall .figs {
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qcall_figs.png) no-repeat 190px 41px;
+        }
+        .qcall .figs li {
+            float: right;
+            border-left: 1px solid #e9e9e9;
+        }
+        .qcall .figs li.f01 {
+            width: 80px;
+            text-align: right;
+        }
+
+        .qcall .figs li.f02 {
+            width: 109px;
+        }
+
+        .qcall .figs li.f03 {
+            width: 156px;
+            border: none;
+        }
+        /*qfile*/
+        .qfileAnimate {
+            position: absolute;
+            right: -100px;
+            bottom: 104px;
+            width: 597px;
+            height: 330px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/update/pic2.png) no-repeat 0 0;
+        }
+        .qfile .txtwrap {
+            position: absolute;
+            left: 7px;
+            top: 115px;
+            width: 450px;
+        }
+        .qfile h2 {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-top: 140px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/update/txt.png) no-repeat 0 0;
+        }
+        .qfile p {
+            width: 90%;
+            margin-bottom: 12px;
+            padding-left: 5px;
+            line-height: 25px;
+            opacity: 0.6;
+        }
+
+        .qfile .figs {
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qfile_figs.png) no-repeat 7px 41px;
+        }
+        .qfile .figs li {
+            float: left;
+            border-right: 1px solid #e9e9e9;
+        }
+
+        .qfile .figs li.f01 {
+            width: 94px;
+            text-align: left;
+            text-indent: 12px;
+        }
+
+        .qfile .figs li.f02 {
+            width: 112px;
+        }
+
+        .qfile .figs li.f03 {
+            width: 108px;
+            border: none;
+        }
+        /*qblog*/
+        .qblogAnimate {
+            position: absolute;
+            left: 88px;
+            bottom: 0;
+            width: 344px;
+            height: 506px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/update/pic3.png) no-repeat -30px 0;
+        }
+        .qblog .txtwrap {
+            position: absolute;
+            right: 7px;
+            top: 120px;
+            width: 495px;
+        }
+
+        .qblog h2 {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-top: 135px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qblog_txt.png) no-repeat 0 0;
+        }
+
+        .qblog p {
+            width: 100%;
+            margin-bottom: 12px;
+            line-height: 25px;
+            text-align: right;
+            opacity: 0.6;
+        }
+        .qblog .figs {
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qblog_figs.png) no-repeat 228px 41px;
+        }
+
+        .qblog .figs li {
+            float: right;
+            border-left: 1px solid #e9e9e9;
+        }
+
+        .qblog .figs li.f01 {
+            width: 80px;
+            text-align: right;
+        }
+
+        .qblog .figs li.f02 {
+            width: 105px;
+        }
+
+        .qblog .figs li.f03 {
+            width: 106px;
+            border: none;
+        }
+        .qblogWrap {
+            position: relative;
+            left: 0;
+            top: 217px;
+            width: 291px;
+            height: 150px;
+        }
+
+        .qblogWrap div {
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 150px;
+        }
+
+        .qblogWrap .pic1 {
+            left: -122px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qblog_fig1.png) no-repeat 0 0;
+            opacity: 0;
+        }
+
+        .qblogWrap .pic2 {
+            left: 70px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qblog_fig2.png) no-repeat 0 0;
+            opacity: 0;
+        }
+
+        .qblogWrap .pic3 {
+            right: -119px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/qblog_fig3.png) no-repeat 0 0;
+            opacity: 0;
+        }
+        #pg3 .qblogWrap .pic1 {
+            opacity: 1;
+            -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+            -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+            -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+            animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+            -webkit-animation-fill-mode: backwards;
+            -moz-animation-fill-mode: backwards;
+            -o-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+        }
+
+        #pg3 .qblogWrap .pic2 {
+            opacity: 1;
+            -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.5s;
+            -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.5s;
+            -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.5s;
+            animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.5s;
+            -webkit-animation-fill-mode: backwards;
+            -moz-animation-fill-mode: backwards;
+            -o-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+        }
+
+        #pg3 .qblogWrap .pic3 {
+            opacity: 1;
+            -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.6s;
+            -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.6s;
+            -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.6s;
+            animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.6s;
+            -webkit-animation-fill-mode: backwards;
+            -moz-animation-fill-mode: backwards;
+            -o-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+            }
+            60% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes zoomIn {
+            0% {
+                transform: scale(0);
+            }
+            60% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes zoomIn {
+            0% {
+                -webkit-transform: scale(0);
+            }
+            60% {
+                -webkit-transform: scale(1.1);
+            }
+            100% {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-o-keyframes zoomIn {
+            0% {
+                -o-transform: scale(0);
+            }
+            90% {
+                -o-transform: scale(1.1);
+            }
+            100% {
+                -o-transform: scale(1);
+            }
+        }
+
+        @-ms-keyframes zoomIn {
+            0% {
+                -ms-transform: scale(0);
+            }
+            60% {
+                -ms-transform: scale(1.1);
+            }
+            100% {
+                -ms-transform: scale(1);
+            }
+        }
+        /* footer */
+        .newfoot {
+            width: 100%;
+            height: 348px;
+            padding-top: 34px;
+            background: #2a2a2a;
+            font-size: 0.75em;
+        }
+
+        .newfoot a:link, .newfoot a:visited {
+            color: #979797;
+        }
+
+        .newfoot a:hover {
+            color: #cfcfcf;
+        }
+
+        .qmaps {
+            width: 960px;
+            height: 205px;
+            margin: 0 auto;
+        }
+
+        .plats {
+            float: left;
+            width: 460px;
+            padding-left: 8px;
+        }
+
+        .plats h3 {
+            height: 50px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .plats a {
+            float: left;
+            padding-top: 65px;
+            background: transparent url(https://sqimg.qq.com/qq_product_operations/im/2015/plats1.png) no-repeat 0 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .plats a:hover {
+            color: #12b7f5;
+        }
+
+        .plats a.plmb {
+            width: 68px;
+            margin-right: 35px;
+            background-position: 0px 0;
+        }
+
+        .plats a.plmb:hover {
+            background-position: 0px -93px;
+        }
+
+        .plats a.plpc {
+            width: 80px;
+            margin-right: 30px;
+            background-position: -105px 0;
+        }
+
+        .plats a.plpc:hover {
+            background-position: -105px -93px;
+        }
+
+        .plats a.plmac {
+            width: 84px;
+            margin-right: 30px;
+            background-position: -210px 0;
+        }
+
+        .plats a.plmac:hover {
+            background-position: -210px -93px;
+        }
+
+        .plats a.plpad {
+            width: 76px;
+            background-position: -326px 0;
+        }
+
+        .plats a.plpad:hover {
+            background-position: -326px -93px;
+        }
+
+        .map {
+            float: left;
+        }
+
+        .map h3 {
+            height: 25px;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .map li {
+            line-height: 22px;
+        }
+
+        .qac {
+            width: 120px;
+        }
+
+        .qfaq {
+            width: 120px;
+        }
+
+        .qlink {
+            width: 120px;
+        }
+
+        .copyright {
+            clear: both;
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 16px;
+            border-top: 1px solid #666;
+            line-height: 17px;
+            text-align: center;
+            color: #666;
+        }
+
+        .login_div {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 622px;
+            height: 368px;
+            margin: -184px 0 0 -311px;
+            z-index: 99999;
+        }
