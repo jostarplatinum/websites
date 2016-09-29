@@ -1,0 +1,181 @@
+@charset 'UTF-8';a,
+body
+{
+    color: rgba(4,24,53,.54);
+}.bg-white,
+body
+{
+    background: #fff;
+}
+.btn,
+.button,
+body,
+button,
+h1,
+h2,
+h3,
+h4
+{
+    font-family: 'PingFang SC','Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+a:link,
+a:hover,
+a:visited,
+ins
+{
+    text-decoration: none;
+}
+
+
+
+.btn, .button, button {
+    -webkit-appearance: none;
+    box-shadow: none;
+    min-width: 8rem;
+    font-weight: 400;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 1.875rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    padding: 0px 1.25rem;
+    outline: 0px;
+    transition: background-color 0.2s ease;
+}
+.icon-dida-logo1{
+	background: url(../icon/icon-dida-logo1.svg);
+}
+.icon-dida-logo2{
+	background: url(../icon/icon-dida-logo2.svg);
+}
+.s-logo
+{
+    width: 170px;
+    height: 40px;
+}
+
+.header{
+    line-height: 4.75rem;
+
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4.75rem;
+}
+.header a{
+    display: inline-block;
+
+    margin: 0 .625rem;
+    padding: 0 .625rem;
+
+    color: rgba(255,255,255,.8);
+}
+.header a:hover{
+    color: rgba(255,255,255,.6);
+}
+.header .btn
+{
+    padding: 0 1.25rem;
+}
+.header .header-row
+{
+    margin-top: 2.25rem;
+
+    -webkit-transition: margin .2s linear;
+            transition: margin .2s linear;
+}
+.header .nav
+{
+    float: right;
+}.header .nav li
+{
+    float: left;
+}
+.header .header-inner
+{
+    position: relative;
+
+    margin: 0 auto;
+}.header .header-inner .menu a
+{
+    color: #617fde;
+}
+.header .header-inner .brand
+{
+    margin-left: 0;
+    padding-left: 0;
+}.header .header-inner .signin
+{
+    margin-right: 0;
+    padding-right: 0;
+}
+.header .header-inner li a
+{
+    font-size: .9375rem;
+}.header .nav-collapse
+{
+    position: relative;
+
+    height: 4.75rem;
+}
+
+@media (min-width: 1144px){
+.container {
+    width: 71.5rem;
+    max-width: 100%;
+}
+.container {
+    margin: 0px auto;
+}
+.visible-desktop {
+    display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 37.5rem;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 4.75rem;
+    overflow: hidden;
+}
+.hero, .hero-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+.hero-bg {
+    background-image: url(../images/hero-bg.png);
+}
+.hero {
+    background-image: url(../images/hero.jpg);
+}
