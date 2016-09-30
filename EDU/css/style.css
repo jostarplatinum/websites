@@ -391,6 +391,10 @@ body {
 
 .Slideshow a {
     position: absolute;
+    filter: alpha(opacity: 0);
+    opacity: 0;
+}
+.Slideshow a:first-child{
     filter: alpha(opacity: 100);
     opacity: 1;
 }
@@ -538,6 +542,7 @@ body {
 
 .environment-ul {
     position: absolute;
+    left:0;
 }
 
 .environment li {
@@ -817,7 +822,11 @@ body {
 .page-ul li.page-active {
     color: #399F2F;
 }
-
+.page-ul li.ellipsis:hover{
+    background-color: #f7f7f7;
+    color: #656565;
+    cursor: default;
+}
 
 /*页码切换结束*/
 
