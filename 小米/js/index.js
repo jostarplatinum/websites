@@ -13,10 +13,11 @@ $(document).ready(function(){
 
 	$(".guide").mouseover(function(){
 		var index = $(".guide").index(this);
-		$(".list li").eq(index).stop().show();
+		console.log(index);
+		$(".nav-list .ifos").eq(index).stop().show();
 	}).mouseout(function(){
 		var index = $(".guide").index(this);
-		$(".list li").eq(index).stop().hide();
+		$(".nav-list .ifos").eq(index).stop().hide();
 	});
 	// 轮播图
 	$(".cir li").on("click",function(){

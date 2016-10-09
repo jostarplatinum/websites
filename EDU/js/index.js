@@ -315,57 +315,40 @@ $(document).ready(function () {
     var UpOrDown = true;
     // 向上向下点击时执行的事件.
     function upDown () {
-        // for (var i = 0; i < pageLi.length; i++) {
-        //     // 当向下翻页时传入页码不为8的倍数时,根据条件翻页,处理传入为8时,直接翻页导致最后的8和8的倍数取不到的情况
-        //     if (UpOrDown && parseInt(pageNoNumber % 8) !== 0) {
-        //         pageLi[i].innerHTML = parseInt(pageNoNumber / 8) * 8 + i + 1;
-        //     } else {
-        //         // 当向上时,如果传入为8的倍数时,直接翻页,不这样处理的话总是会出现要比8的倍数少1才翻页的情况
-        //         if (parseInt(pageNoNumber % 8) == 0) {
-        //             pageLi[i].innerHTML = (parseInt(pageNoNumber / 8) - 1) * 8 + i + 1;
-        //         } else {
-        //             // 向上翻页的普通情况
-        //             pageLi[i].innerHTML = parseInt(pageNoNumber / 8) * 8 + i + 1;
+        for (var i = 0; i < $pageLi.length; i++) {
+            // 当向下翻页时传入页码不为8的倍数时,根据条件翻页,处理传入为8时,直接翻页导致最后的8和8的倍数取不到的情况
+            if (UpOrDown && parseInt(pageNoNumber % 8) !== 0) {
+                $pageLi.eq(i).text(parseInt(pageNoNumber / 8) * 8 + i + 1);
+            } else {
+                // 当向上时,如果传入为8的倍数时,直接翻页,不这样处理的话总是会出现要比8的倍数少1才翻页的情况
+                if (parseInt(pageNoNumber % 8) == 0) {
+                    $pageLi.eq(i).text((parseInt(pageNoNumber / 8) - 1) * 8 + i + 1);
+                } else {
+                    // 向上翻页的普通情况
+                    $pageLi.eq(i).text(parseInt(pageNoNumber / 8) * 8 + i + 1);
 
-        //         }
-        //     }
-        //     pageLi[i].className = '';
-        // }
-        // if (parseInt(pageNoNumber % 8) == 0) {
-        //     pageLi[pageLi.length - 1].className = 'page-active';
-
-        // } else {
-        //     pageLi[parseInt(pageNoNumber % 8) - 1].className = 'page-active';
-        // }
-        var pageActiveText = parseInt($('.page-active').text());
-        var index = $('.page-active').index()+1;
-        if (pageActiveText <= 2){
-        	$pageUl.children('li').eq(index).addClass('page-active').siblings().removeClass('page-active');
-        }else{
-        	if (pageActiveText >= totalPage - 2){
-        		$('.end').css('display','none');
-        		$pageUl.children('li').eq(index).addClass('page-active').siblings().removeClass('page-active');
-        	}else{
-        	$('.start').css('display','block');
-        		$pageUl.children('li').each(function(){
-        			if ( !$(this).hasClass('ellipsis') && !$(this).hasClass('endpage') && !$(this).hasClass('startpage')){
-        				$(this).text(parseInt($(this).text())+1);
-        			}
-        		})
-        	}
+                }
+            }
+            $pageLi.eq(i).attr('class','');
         }
-        // tabChange();
+        if (parseInt(pageNoNumber % 8) == 0) {
+            $pageLi.eq($pageLi.length - 1).attr('class','page-active');
+
+        } else {
+            $pageLi.eq(parseInt(pageNoNumber % 8) - 1).attr('class','page-active');
+        }
+         tabChange();
     }
     // 向上翻页点击事件
-    // myAddEvent(paginationUP, 'click', function () {
-    //     pageNoNumber--;
-    //     // 边界处理
-    //     if (pageNoNumber <= 1) {
-    //         pageNoNumber = 1;
-    //     }
-    //     UpOrDown = false;
-    //     upDown();
-    // });
+    $paginationUP.on('click', function () {
+        pageNoNumber--;
+        // 边界处理
+        if (pageNoNumber <= 1) {
+            pageNoNumber = 1;
+        }
+        UpOrDown = false;
+        upDown();
+    });
     // 向下翻页点击事件
     $paginationDOWN.on('click', function () {
         pageNoNumber++;
@@ -376,7 +359,6 @@ $(document).ready(function () {
         UpOrDown = true;
         upDown();
     });
-    $('.ellipsis').unbind('click');
     // Ajax函数
     function course () {
         var senddata = {
@@ -498,3 +480,45 @@ $(document).ready(function () {
     course();
 });
 /* 课程列表结束*/
+
+/*
+ * 热门排行开始
+ */
+$(document).ready(function () {
+    var ranking = $('.ranking-list');
+    $.ajax({
+        	type:'get',
+        	url:'http://study.163.com/webDev/hotcouresByCategory.htm',
+        	dataType: "json",
+        	success: function(arr){
+        		var i = Math.round(Math.random() * 10);
+        		var len = i + 10;
+        		for (i; i < len; i++) {
+            		// 最外层包裹
+            		var hotList =$('<div class="list-content clearfix"></div>');
+            		hotList.appendTo(ranking);
+            		// 左侧图片
+            		var hotListImg = $('<img>');
+            		hotListImg.attr('src',arr[i].smallPhotoUrl);
+            		hotListImg.attr('alt',arr[i].name);
+            		hotListImg.appendTo(hotList);
+            		// 名字
+            		var hotListTitle = $('<a></a>');
+            		hotListTitle.attr('href',arr[i].providerLink);
+            		hotListTitle.text(arr[i].name);
+            		hotListTitle.appendTo(hotList);
+            		// 学习人数
+            		var hotPrice = $('<div></div>');
+            		hotPrice.text(arr[i].price);
+            		hotPrice.appendTo(hotList);
+            		// 图标..
+            		var hotPriceIcon = $('<i class="iconfont">iconfont</i>');
+            		hotPrice.append(hotPriceIcon);
+            	}
+            },
+    		fail:function (error) {
+            	console.log('服务器响应失败,错误号:' + error);
+        	}
+    })
+});
+/* 热门排行结束*/
