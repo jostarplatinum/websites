@@ -952,7 +952,7 @@ nav ul li span{
 	left: 0;
 	margin-top: -24px;
 	text-align: center;
-	display: none;
+	/*display: none;*/
 }
 .l i{
 	font-size: 25px;

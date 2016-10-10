@@ -140,3 +140,35 @@ $(document).ready(function(){
     	$(".title").show();
     });
 })
+
+// 内容轮播
+$(document).ready(function(){
+	$(".box-cir li").on("click",function(){
+    	var num = $(this).index();
+    	$(this).addClass("box-cir-active")
+			   .siblings().removeClass("box-cir-active");
+		$(this).parent().prev().animate({right:num*296+"px"},200);
+    });
+    $(".box-right").on("click",function(){
+    	var index = $(this).parent().find(".box-cir-active").index();
+    	if(index == 3){
+    		index=3;
+    	}else{
+    		index++;
+    	}
+    	$(this).parent().find(".box-cir-active").removeClass("box-cir-active");
+    	$(this).parent().children(".box-cir").find("li").eq(index).addClass("box-cir-active");
+    	$(this).parent().children(".seclist").animate({right:index*296+"px"},200);
+    })
+    $(".box-left").on("click",function(){
+    	var index = $(this).parent().find(".box-cir-active").index();
+    	if(index == 0){
+    		index=0;
+    	}else{
+    		index--;
+    	}
+    	$(this).parent().find(".box-cir-active").removeClass("box-cir-active");
+    	$(this).parent().children(".box-cir").find("li").eq(index).addClass("box-cir-active");
+    	$(this).parent().children(".seclist").animate({right:index*296+"px"},200);
+    })
+})
