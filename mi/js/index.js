@@ -127,3 +127,16 @@ $(document).ready(function(){
         },5000);
     },10000);
 })
+
+// 切换
+$(document).ready(function(){
+	$(".sec-nav li").mouseover(function(){
+    	$(this).addClass("choose")
+    		   .siblings().removeClass("choose");
+    	var index=$(this).index();
+    	console.log($(this).parents(".wrap").find("ul").eq(index));
+    	$(this).parents(".wrap").find("ul").eq(index).show()
+    				  .siblings().hide();
+    	$(".title").show();
+    });
+})
