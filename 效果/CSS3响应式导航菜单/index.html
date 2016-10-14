@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>演示：CSS3响应式菜单</title>
+<meta name="viewport" content="width=320,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<style type="text/css">
+body {
+	font: 90%/160% Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 900px;
+	max-width: 96%;
+	margin: 0 auto;
+}
+h4{font-size:14px; line-height:30px}
+p{line-height:30px}
+/* nav */
+.nav {
+	position: relative;
+	margin: 20px 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #d0d0d0;
+}
+.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/* right nav */
+.nav.right ul {
+	text-align: right;
+}
+
+/* center nav */
+.nav.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(images/menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
+</style>
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="header">
+   <div id="logo"><h1><a href="#" title="返回helloweba首页">helloweba</a></h1></div>
+</div>
+<p>请缩小你的浏览器窗口或者使用手机浏览。</p>
+<h4>左对齐</h4>
+<nav class="nav">
+	<ul>
+		<li class="current"><a href="#">首页</a></li>
+		<li><a href="#">客户服务</a></li>
+		<li><a href="#">产品展示</a></li>
+		<li><a href="#">经典案例</a></li>
+		<li><a href="#">联系我们</a></li>
+	</ul>
+</nav>
+<p</p>
+<br/>
+<h4>右对齐</h4>
+<nav class="nav right">
+	<ul>
+		<li><a href="#">首页</a></li>
+		<li><a href="#">客户服务</a></li>
+		<li><a href="#">产品展示</a></li>
+		<li><a href="#">经典案例</a></li>
+		<li class="current"><a href="#">联系我们</a></li>
+	</ul>
+</nav>
+<p></p>
+<br/>
+<h4>居中对齐</h4>
+<nav class="nav center">
+	<ul>
+		<li><a href="#">首页</a></li>
+		<li><a href="#">客户服务</a></li>
+		<li class="current"><a href="#">产品展示</a></li>
+		<li><a href="#">经典案例</a></li>
+		<li><a href="#">联系我们</a></li>
+	</ul>
+</nav>
+<p></p>
+
+
+   <br/>
+<br/>
+<div id="footer">
+    <p></a></p>
+</div>
+</body>
+</html>
